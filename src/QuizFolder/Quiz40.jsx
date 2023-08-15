@@ -53,15 +53,12 @@ const Quiz40 = () => {
   return (  
     <div>
       <h1>JS퀴즈</h1>
-      {/* <button onClick={ClickPrompt}>몸무게제한,입력</button> */}
       <p>몸무게 제한</p>
       <input type="text" value={data.limit} onChange={WeightLimit}/>
-      {/* <button onClick={CorrectionData}>몸무게제한 입력</button> */}
       <p>인원수 제한</p>
       <input type="text" value={data.personnel} onChange={PersonnelLimit}/>
       <p>탑승 가능 인원</p>
       <button onClick={maxWeight}>확인하기</button>
-      {/* {} */}
       <p>사람 몸무게 추가</p>
       <input type="text" value={weight} onChange={BodyWeightHandler}/>
       <button onClick={BodyWeightAdd}>추가</button>
