@@ -2,11 +2,11 @@ import { useState } from "react";
 
 const Quiz40 = () => {
 
-    
   const [data, setData] = useState({
     limit : 0,
     personnel : 0
   });
+
   const [weight, setWeight] = useState()
   const [results, setResults] = useState([]);
 
@@ -28,7 +28,7 @@ const Quiz40 = () => {
     setWeight(Number(value));
   }
 
-  // 
+  // 몸무게 추가
   const BodyWeightAdd = () => {
     if(data.personnel > results.length){
       setResults((prev) => [...prev, weight]);
@@ -38,6 +38,7 @@ const Quiz40 = () => {
     }
   }
 
+  // 정해진 몸무게 까지 탈수있는 최대인원수 출력
   const maxWeight = () => {
     const filterdResults = [];
     let total = 0;
@@ -62,9 +63,11 @@ const Quiz40 = () => {
       <p>사람 몸무게 추가</p>
       <input type="text" value={weight} onChange={BodyWeightHandler}/>
       <button onClick={BodyWeightAdd}>추가</button>
-      {results.map((a,i) => (
-        <div>{a}</div>
-      ))}
+      {
+        results.map((a,i) => (
+          <div>{a}</div>
+        ))
+      }
     </div>
   );
 }
