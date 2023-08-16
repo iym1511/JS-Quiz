@@ -31,5 +31,5 @@ const Quiz49 = () => {
     </div>
   );
 }
- 
+
 export default Quiz49;
