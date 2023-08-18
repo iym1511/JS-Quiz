@@ -8,20 +8,17 @@ const Quiz52 = () => {
     // 첫번째 return 인자 2,4,6,3
 
     const pivot = arr[0]; // 9 / 
-    console.log(arr)
-    console.log(pivot)
     const left = [];
     const right = [];
     // length = 5
     for (let i=1; i<arr.length; i++){ 
       if(arr[i] < pivot){
         left.push(arr[i]); // (1). 2,4,6,3 < 9 / (3). 6,3 < 4  6은 right 3은 left
-        console.log(left)
       } else {
         right.push(arr[i]); // (2). 4,6,3 < 2 
-        console.log(right)
       }
     }
+    // 3바퀴 다 돌면 [3,4,6]
     console.log(quickSort(left).concat(pivot, quickSort(right)))
     return quickSort(left).concat(pivot, quickSort(right));
   }
