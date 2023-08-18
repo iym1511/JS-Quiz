@@ -20,7 +20,7 @@ const Quiz50 = () => {
     }
     return result;
   }
-  
+
   // for문을 자세히 살펴봤을때
   // i 가 0일땐 0,1,2,3,4 총 5번 의 확인 후 교체
   // i 가 1일땐 0,1,2,3 총 4번 의 확인 후 교채 이런식으로 하나씩 크기비교후 정렬
@@ -35,13 +35,14 @@ const Quiz50 = () => {
   // 3 2 8 5 9
   // 3 2 5 8 9
   // 3 2 5 8 9
-
+  
   // 2 3 5 8 9 완성이 되어 아래부터는 똑같다.
 
 
   const items = prompt('입력해주세요.').split(' ').map((n) => {
     return parseInt(n, 10);
   });
+
   console.log(items)
   console.log(bubble(items));
 
