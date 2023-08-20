@@ -1,11 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import Quiz52 from './QuizFolder/Quiz52';
+import Quiz53 from './QuizFolder/Quiz53';
+import Quiz50 from './QuizFolder/Quiz50';
 
 function App() {
   return (
     <div className="App">
-      <Quiz52 />
+      <Quiz53 />
     </div>
   );
 }

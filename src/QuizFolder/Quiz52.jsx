@@ -1,5 +1,8 @@
+import { useEffect, useState } from "react";
+
 const Quiz52 = () => {
 
+  
   // 9 2 4 6 3
   function quickSort(arr){
     if (arr.length <= 1){
@@ -19,6 +22,7 @@ const Quiz52 = () => {
       }
     }
     // 3바퀴 다 돌면 [3,4,6]
+    console.log(left,right)
     console.log(quickSort(left).concat(pivot, quickSort(right)))
     return quickSort(left).concat(pivot, quickSort(right));
   }

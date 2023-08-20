@@ -13,6 +13,7 @@ const Quiz50 = () => {
         console.log(j,i)
         if (result[j] > result[j + 1]) {
           let temp = result[j]; // 현제 자릿수 확인
+          console.log(temp)
           result[j] = result[j+1]; // 자리 교체 0,1 > 1,0
           result[j+1] = temp; // 교체한 값을 다시 temp 변수에 저장
         }
@@ -35,7 +36,7 @@ const Quiz50 = () => {
   // 3 2 8 5 9
   // 3 2 5 8 9
   // 3 2 5 8 9
-  
+
   // 2 3 5 8 9 완성이 되어 아래부터는 똑같다.
 
 
