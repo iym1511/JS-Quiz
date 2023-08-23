@@ -1,22 +1,4 @@
 const Quiz68 = () => {
-  // const busTime = ["12:30", "13:20", "14:13"];
-  // const time = prompt("현재 시간을 알려주세요");
-  
-  // const busTimesInDate = busTime.map(timeStr => {
-  //   const [hours, minutes] = timeStr.split(":");
-  //   const date = new Date();
-  //   date.setHours(parseInt(hours, 10));
-  //   date.setMinutes(parseInt(minutes, 10));
-  //   return date;
-  // });
-
-  // const testFc = (currentTime) => {
-  //   for (let i = 0; i < busTimesInDate.length; i++) {
-  //     console.log(busTimesInDate[i].getHours());
-  //   }
-  // }
-
-  // console.log(testFc(time));
 
   function solution(busTime, ruleTime){
     let answer = [];
@@ -48,7 +30,6 @@ const Quiz68 = () => {
     }
     return answer;
   }
-  
   
   console.log(solution(["12:30", "13:20", "14:13"], "12:40"));
 
