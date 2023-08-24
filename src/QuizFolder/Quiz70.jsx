@@ -19,6 +19,7 @@ const Quiz70 = () => {
 
   // console.log(test());
 
+  // 답안
   function solution(a, b) {
     let c = [];
     const len = a[0].length; // 2
@@ -47,7 +48,7 @@ const b = [[1, 0], [0, 3]];
 
 console.log(solution(a, b));
 
-  return <div></div>;
+  return <></>;
 };
 
 export default Quiz70;
