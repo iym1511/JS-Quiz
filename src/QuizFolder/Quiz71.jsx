@@ -39,6 +39,8 @@ const Quiz71 = () => {
   // 하지만 E D F A C D 로 나와야함
   console.log(dfs(graph, "E"));
 
+  
+
   return <>
   </>;
 };
