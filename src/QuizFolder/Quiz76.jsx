@@ -38,6 +38,7 @@ const Quiz76 = () => {
   console.log(Math.max.apply(null, valueArray));
   // Math.max(...valueArray) 스프레드 연산자 사용가능
 
+  
   return <div></div>;
 };
 
