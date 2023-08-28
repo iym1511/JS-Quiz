@@ -1,10 +1,10 @@
 import './App.css';
-import Quiz77 from './QuizFolder/Quiz77';
+import Quiz78 from './QuizFolder/Quiz78';
 
 function App() {
   return (
     <div className="App">
-      <Quiz77 />
+      <Quiz78 />
     </div>
   );
 }
