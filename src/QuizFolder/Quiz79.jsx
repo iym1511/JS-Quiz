@@ -11,7 +11,8 @@ const Quiz79 = () => {
     }
     for (let i in a) {
       // let i in b 로 해도됩니다.
-      console.log(a[i],b[i])
+      // a = [10,20,25,27,34] / b = [35,39,10,20,25]
+      // a 는 b에 마지막 35,39 를 때줌 , b는 a에 마지막 35 39를 받음
       c.push(Math.abs(a[i] - b[i]));
     }
     //최솟값
