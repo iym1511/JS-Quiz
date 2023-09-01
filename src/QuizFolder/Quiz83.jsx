@@ -8,16 +8,14 @@ const Quiz83 = () => {
       for (let i = 0; i < chars.length; i++) {
         // 1. 1 push // 3. 723의 0번째 1+7 push // 6. 23의 0번째 17+2 // 9. 3의 0번째 172+3
         permute.push(prefix + chars[i]);
-        // console.log(permute)
-        // console.log(i)
+
         // 4. 71 없으니 push // 7. 217없으니 push // 10. 3172 push
         if (permute.indexOf(chars[i] + prefix) === -1) {
           permute.push(chars[i] + prefix);
         }
         
-        // console.log(chars.slice(i+1))
         // 2. 1, 723 push // 5. 17, 2 // 8. 172,3 // 11. 1723, [] ..?
-        // ⚠️ 11 번 이후에는 재귀호출로 인하여 나머지 순열들이 나열되는데 이해못함...
+        // ⚠️ 11 번 이후에는 재귀호출로 인하여 나머지 순열들이 나열되는데 이해못함...ㄴ
         console.log(prefix,chars[i], chars.slice(i + 1))
         f(prefix + chars[i], chars.slice(i + 1));
       }
