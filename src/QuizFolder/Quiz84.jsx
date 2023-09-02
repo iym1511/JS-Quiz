@@ -1,4 +1,6 @@
 const Quiz84 = () => {
+
+  // solution for문루프가 한번 작동하면 rule함수 for문 루프는 왕복한다.
   const solution = (n) => {
     let answer = "1";
 
