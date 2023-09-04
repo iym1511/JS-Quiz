@@ -2,6 +2,7 @@ import { useState } from "react";
 
 const Quiz87 = () => {
 
+    const [result, setResult] = useState([]);
     const [list, setList] = useState([]);
     const [text, setText] = useState({
       id : '',
@@ -55,16 +56,23 @@ const Quiz87 = () => {
     //장애물을 추가하려는 자리에 캐릭터가 있을 시 캐릭터는 그대로둔다
     //마찬가지 외벽으로 인한 좌표 조정을 해준다.
     for(let i of world_map) {
-      console.log(i);
-    }
-
+      console.log(i)
+      result.push(i)
+      }
+      return world_map;
   }
+
 
     //     가로,세로,[캐릭위치],[[장],[애],[물]]
     console.log(makeMap(4, 5, [0, 0], [[0,1],[1,1],[2,3],[1,3]]));
 
+    
+
   return (  
     <div>
+      {/* {result.map((a,i) => (
+        <p>{a}</p>
+      ))} */}
       {list.map((a,i)=>(
         <div key={i}>
           <p>{a.id}</p>
