@@ -12,7 +12,6 @@ const Quiz87 = () => {
     const textHandler = (e) => {
       const { name, value } = e.target;
       setText((prev) => ({...prev, [name] : value}));
-
     }
 
     const testFc = () => {
