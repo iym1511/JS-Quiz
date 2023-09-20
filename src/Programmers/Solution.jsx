@@ -7,6 +7,7 @@ const Solution2 = () => {
 
   // c : photo 를 순차적으로 지남
   // name.indexOf(c) : name안에 c가 어디 위치의 index값인지 찾아줌
+  // a : 누산값, c: 현재 값
 
   // 첫번째 배열 순회
   // 0,1,2,3
