@@ -1,5 +1,6 @@
 import './App.css';
 import Solution4 from './Programmers/Solution4';
+import Solution5 from './Programmers/Solution5';
 import Quiz91 from './QuizFolder/Quiz91';
 
 

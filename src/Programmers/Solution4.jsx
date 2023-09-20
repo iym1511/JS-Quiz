@@ -1,6 +1,11 @@
 // 등차수열의 특정한 항만 더하기
 
+import { useState } from "react";
+
 const Solution4 = () => {
+
+  const [result, setResult] = useState();
+
   let a = 3;
   let b = 4;
   let included = [true, false, false, true, true];
@@ -22,17 +27,17 @@ const Solution4 = () => {
   // 다른사람의 베스트 풀이
   // acc 누적값
   function solution(a, d, included) {
-      return included.reduce((acc, flag, i) => {
-        console.log(acc,a,d,i)
+      const rst = included.reduce((acc, flag, i) => {
           return flag ? acc + a + (d * i) : acc
       }, 0)
-  }
+      setResult((prev) => prev = rst);
+    }
   
-  console.log(solution(a, b, included));
 
   return (  
     <div>
-      <p>{}</p>
+      <p>{result}</p>
+      <button onClick={() => solution(a, b, included)}>버튼</button>
     </div>
   );
 }
