@@ -25,7 +25,7 @@ const Solution4 = () => {
 
 
   // 다른사람의 베스트 풀이
-  // acc 누적값
+  // acc 누적값 (return값이 누적된다.)
   function solution(a, d, included) {
       const rst = included.reduce((acc, flag, i) => {
           return flag ? acc + a + (d * i) : acc

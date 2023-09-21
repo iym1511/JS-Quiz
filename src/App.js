@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       {/* <Quizs /> */}
-      <Solution4 />
+      <Solution5 />
     </div>
   );
 }
