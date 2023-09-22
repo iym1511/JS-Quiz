@@ -1,3 +1,4 @@
+// 수 조작하기 1
 const Solution9 = () => {
 
   let n = 0;
