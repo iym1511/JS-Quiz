@@ -1,3 +1,4 @@
+// 이어붙인 수
 const Solution7 = () => {
 
   const num_list = [3, 4, 5, 2, 1];
@@ -14,6 +15,7 @@ const Solution7 = () => {
     return +result + +result2;
   }
 
+  
   console.log(solution(num_list))
 
   return (  
