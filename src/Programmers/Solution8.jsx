@@ -1,3 +1,4 @@
+// 마지막 두 원소
 const Solution8 = () => {
   let num_list = [5, 2, 1, 7, 5];
 
