@@ -1,9 +1,5 @@
 const Solution5 = () => {
 
-  // let a = Math.floor(Math.random() * 10);
-  // let b = Math.floor(Math.random() * 10);
-  // let c = Math.floor(Math.random() * 10);
-
   let a = 5;
   let b = 3;
   let c = 3;
