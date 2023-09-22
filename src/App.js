@@ -1,5 +1,6 @@
 import './App.css';
 import Solution8 from './Programmers/Solution8';
+import Solution9 from './Programmers/Solution9';
 
 
 
@@ -7,7 +8,7 @@ function App() {
   return (
     <div className="App">
       {/* <Quizs /> */}
-      <Solution8 />
+      <Solution9 />
     </div>
   );
 }
