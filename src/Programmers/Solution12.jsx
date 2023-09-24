@@ -11,10 +11,14 @@ const Solution12 = () => {
     return queries.map(([s, e, k]) => {
       let result = -1;
       for(let i = s; i <= e; i++){
-        const v = arr[i]
+        const v = arr[i];
+        // 1. 0, 4, 2 : 4, 3 중 최소숫자 3
+        // 2. 0, 3, 2 : 2보다 큰 숫자중 최소 4 (4뿐이기 때문) 
+        // 3. 0, 2, 2 : 2보다 큰 숫자는없다 -1
         if(v <= k) continue;
         
         result = result === -1 ? v : Math.min(result, v);
+        console.log(result)
       }
       return result;
     })
