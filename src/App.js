@@ -1,12 +1,11 @@
 import './App.css';
-
-import Solution12 from './Programmers/Solution12';
+import Solution13 from './Programmers/Solution13';
 
 function App() {
   return (
     <div className="App">
       {/* <Quizs /> */}
-      <Solution12 />
+      <Solution13 />
     </div>
   );
 }
