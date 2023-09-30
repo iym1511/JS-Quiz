@@ -1,3 +1,4 @@
+// 글자 이어 붙여 문자열 만들기
 const Solution19 = () => {
 
   let my_string = "cvsgiorszzzmrpaqpe";
