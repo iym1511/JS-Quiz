@@ -1,3 +1,4 @@
+// 접미사인지 확인하기
 const Solution25 = () => {
 
   let st = "banana";
