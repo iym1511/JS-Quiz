@@ -1,3 +1,4 @@
+// 문자열 앞의 n 글자
 const Solution26 = () => {
 
   let st = "ProgrammerS123";
