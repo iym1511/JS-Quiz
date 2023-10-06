@@ -1,6 +1,6 @@
 
 // 문자열 여러번 뒤집기
-const SOlution21 = () => {
+const Solution21 = () => {
 
   let my_string = "rermgorpsam";
   let queries = [[2,3], [0,7], [5,9], [6,10]];
@@ -26,4 +26,4 @@ const SOlution21 = () => {
   );
 }
  
-export default SOlution21;
+export default Solution21;
