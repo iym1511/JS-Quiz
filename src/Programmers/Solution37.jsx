@@ -1,3 +1,5 @@
+// 음양 더하기
+
 const Solution37 = () => {
 
   let absolutes = [4, 7, 12];
@@ -8,9 +10,9 @@ const Solution37 = () => {
 
     for(let i = 0; i<absolutes.length; i++){
       if(signs[i]){
-        answer += absolutes[i]
+        answer += absolutes[i];
       }else{
-        answer -= absolutes[i]
+        answer -= absolutes[i];
       }
     }
 
