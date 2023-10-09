@@ -1,3 +1,4 @@
+// 내적
 const Solution38 = () => {
 
   let a = [1, 2, 3, 4];
