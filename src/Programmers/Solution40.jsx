@@ -9,13 +9,12 @@ const Solution40 = () => {
       for (let j = 0; j < numbers.length; j++) {
         if (j !== i) {
           set.add(numbers[j] + numbers[i]);
-
         }
       }
     }
     set.forEach((a) => {
       answer.push(a);
-    })
+    });
     return answer.sort((a, b) => a - b);
   };
 
