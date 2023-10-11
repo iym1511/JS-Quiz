@@ -6,7 +6,6 @@ const Solution41 = () => {
   let numbers = [1, 3, 4, 5, 8, 2, 1, 4, 5, 9, 5];
   let hand = "right";
 
-
   // function solution(numbers, hand) {
   //   let answer = "";
   //   let leftNum = [];
@@ -33,7 +32,7 @@ const Solution41 = () => {
   //       // left = 8 right = 3 / 2 - 8 = 6 / 2 - 3 = 1 /
   //       // 5 - 4 = 1 / 5 - 9 = 4
   //       if (Math.abs(numbers[i] - leftNum[leftNum.length - 1]) < Math.abs(numbers[i] - rightNum[rightNum.length - 1])) {
-          
+
   //         if(leftNum.includes(numbers[i]) && count === 0){
   //           count = 1;
   //           answer += 'R'
@@ -62,87 +61,106 @@ const Solution41 = () => {
   //   return answer;
   // }
 
+  const solution = (numbers, hand) => {
+    const answer = [];
 
-const solution = (numbers, hand) => {
-  const answer = [];
+    // 왼쪽 스타트
+    let leftHandPosition = "*";
+    // 오른쪽 스타트
+    let rightHandPosition = "#";
 
-  // 왼쪽 스타트
-  let leftHandPosition = '*';
-  // 오른쪽 스타트
-  let rightHandPosition = '#';
+    numbers.forEach((number) => {
+      if (number === 1 || number === 4 || number === 7) {
+        answer.push("L");
+        leftHandPosition = number;
+        return;
+      }
 
-  numbers.forEach(number => {   
-    if (number === 1 || number === 4 || number === 7) {
-      answer.push('L');
-      leftHandPosition = number;
-      return;
-    }
-
-    if (number === 3 || number === 6 || number === 9) {
-      answer.push('R');
-      rightHandPosition = number;
-      return;
-    }
-
-    // left 인자(4, 5), right 인자(3, 5)
-    // 1
-    const leftHandDistance = getDistance(leftHandPosition, number);
-    const rightHandDistance = getDistance(rightHandPosition, number);
-    console.log(leftHandDistance, rightHandDistance, " / ", leftHandPosition, number," / ",rightHandPosition, number);
-    if (leftHandDistance === rightHandDistance) {
-      if (hand === "right") {
-        answer.push('R');
+      if (number === 3 || number === 6 || number === 9) {
+        answer.push("R");
         rightHandPosition = number;
         return;
       }
 
-      if (hand === 'left') {
-        answer.push('L');
-        leftHandPosition = number;
-        return;
+      // 가지고 있던 이전의 left와 right의 값들을 저장해서 현재 값과
+      // 어느값이 더 가까운지 비교하기위해 인자로 넘겨줌
+
+      // left 인자(4, 5), right 인자(3, 5)
+      // left : 1
+      const leftHandDistance = getDistance(leftHandPosition, number);
+      // right : 2
+      const rightHandDistance = getDistance(rightHandPosition, number);
+
+      console.log(
+        leftHandDistance,
+        rightHandDistance,
+        " / ",
+        leftHandPosition,
+        number,
+        " / ",
+        rightHandPosition,
+        number
+      );
+
+      // 똑같이 가짜운 위치에 있다면 왼손,오른손잡이 여부에따라 결정
+      if (leftHandDistance === rightHandDistance) {
+        if (hand === "right") {
+          answer.push("R");
+          rightHandPosition = number;
+          return;
+        }
+
+        if (hand === "left") {
+          answer.push("L");
+          leftHandPosition = number;
+          return;
+        }
       }
-    }
 
-    if (leftHandDistance > rightHandDistance) {
-      answer.push('R');
-      rightHandPosition = number;
-    } 
+      if (leftHandDistance > rightHandDistance) {
+        answer.push("R");
+        rightHandPosition = number;
+      }
 
-    // 1 < 2 이기때문에 L
-    if (leftHandDistance < rightHandDistance) {
-      answer.push('L');
-      leftHandPosition = number;
-    }
-  });
+      // 1 < 2 이기때문에 L
+      if (leftHandDistance < rightHandDistance) {
+        answer.push("L");
+        leftHandPosition = number;
+      }
+    });
 
-  return answer.join("");
-};
+    return answer.join("");
+  };
 
-const getDistance = (locatedNumber, target) => {
-  // 객체의 첫번째 index =  세로 index
-  // 객체의 두번째 index = 가로 index
-  const keyPad = {
-    1: [0, 0], 
-    2: [0, 1], 
-    3: [0, 2],
-    4: [1, 0], 
-    5: [1, 1], 
-    6: [1, 2],
-    7: [2, 0], 
-    8: [2, 1], 
-    9: [2, 2],
-    '*': [3, 0], 
-    0: [3, 1], 
-    '#': [3, 2],
-  }
-  // 4 : [1, 0] / 3 : [0, 2]
-  const nowPosition = keyPad[locatedNumber];
-  // 5 : [1, 1] / 5: [1, 1]
-  const targetPosition = keyPad[target];
+  // 키패드의 위치를 정수로 표현함
+  const getDistance = (locatedNumber, target) => {
+    // 객체의 첫번째 index =  세로 index
+    // 객체의 두번째 index = 가로 index
+    const keyPad = {
+      1: [0, 0],
+      2: [0, 1],
+      3: [0, 2],
+      4: [1, 0],
+      5: [1, 1],
+      6: [1, 2],
+      7: [2, 0],
+      8: [2, 1],
+      9: [2, 2],
+      "*": [3, 0],
+      0: [3, 1],
+      "#": [3, 2],
+    };
+    // 4 : [1, 0] / 3 : [0, 2]
+    const nowPosition = keyPad[locatedNumber];
+    // 5 : [1, 1] / 5: [1, 1]
+    const targetPosition = keyPad[target];
 
-  // 1 - 1 + 0 - 1 = 1 / 0 - 1 + 2 - 1 = 2 {결과 : 1과 2}
-  return Math.abs(targetPosition[0] - nowPosition[0]) + Math.abs(targetPosition[1] - nowPosition[1]);
-};
+    // 1 - 1 + 0 - 1 = 1 / 1 - 0 + 1 - 2 = 2 {결과 : 1과 2}
+    return (
+      Math.abs(targetPosition[0] - nowPosition[0]) +
+      Math.abs(targetPosition[1] - nowPosition[1])
+    );
+  };
 
   console.log(solution(numbers, hand));
 

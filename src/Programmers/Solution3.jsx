@@ -22,13 +22,13 @@ const Solution3 = () => {
   //   return result ? result : "EMPTY"
   // }
 
-
+// 더 간결한 방법
 function solution(code) {
     let mode =0;
     let str ="";
     for(let i = 0 ; i < code.length ; i++){
         if(code[i]==="1") {
-          mode = (mode ===0)? 1 : 0; 
+          mode = (mode === 0)? 1 : 0; 
           continue;
         }
         if(mode ===0){
