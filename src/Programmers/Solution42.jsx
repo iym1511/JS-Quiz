@@ -1,10 +1,11 @@
 import styled from '@emotion/styled';
-
+// 삼총사
 const Solution42 = () => {
 
   // const number = [-2, 3, 0, 2, -5];
   const number = [-3, -2, -1, 0, 1, 2, 3];
 
+  // 해설 참조
   function solution(number) {
       let answer = 0;
       for(let i = 0; i < number.length-2; i++){
