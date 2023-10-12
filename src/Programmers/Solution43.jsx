@@ -1,3 +1,4 @@
+// 다른 사람의 풀이
 const Solution43 = () => {
   const a = 2;
   const b = 1;
@@ -30,6 +31,8 @@ const Solution43 = () => {
 
   // }
 
+
+  // 풀이 코드
   function solution(a, b, n) {
       let answer = 0;
   
