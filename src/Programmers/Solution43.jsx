@@ -50,7 +50,7 @@ const Solution43 = () => {
       return answer;
   }
 
-  console.log(solution(a, b, n))
+  console.log(solution(a, b, n));
 
   return <div></div>;
 };
