@@ -1,5 +1,6 @@
 // 모의고사
 const Solution48 = () => {
+  console.log(3%10)
   const answers = [1, 3, 2, 4, 2];
 
   // 테케 틀려버린 내 코드
