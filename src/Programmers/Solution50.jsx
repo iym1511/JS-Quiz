@@ -1,3 +1,4 @@
+// 카드 뭉치
 const Solution50 = () => {
   const cards1 =["i", "drink", "water"];
   const cards2 = ["want", "to"];
