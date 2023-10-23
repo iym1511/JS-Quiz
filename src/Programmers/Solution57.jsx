@@ -1,3 +1,4 @@
+// 소수찾기
 const Solution57 = () => {
 
   const n = 10;
@@ -16,7 +17,6 @@ const Solution57 = () => {
     // 0과 1은 소수가 아니므로, 해당 인덱스 값을 false로 변경합니다.
     numbers[0] = false
     numbers[1] = false
-
 
     // 합성수는 false로 교체
     for (let i = 2; i < root; i++) {
