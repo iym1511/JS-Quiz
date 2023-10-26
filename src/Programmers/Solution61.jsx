@@ -46,11 +46,8 @@ const Solution61 = () => {
   function solution(n, m) {
     let maxNum = 0;
     for(let i=1;i<=Math.min(n,m);i++){
-      console.log(3 % i === 0);
-      console.log(12 % i === 0);
         if(Math.max(n,m) % i === 0 && Math.min(n,m) % i === 0)
             maxNum = i
-          console.log(maxNum)
     }
 
     const answer = [maxNum , n * m / maxNum]
