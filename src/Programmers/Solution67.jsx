@@ -39,6 +39,7 @@ function solution(number, limit, power) {
             // (1). 1*1 == 1 : 1
             if (j * j == i) count++;
             // (2). 2 % 1 : +2 (j가 2면 j for문 실행 안함)
+            // 4가 나오는 6, 8, 10 은 j*j가 i랑은 안맞는데  1,2두 수가 else if 에서 +2+2 가되어 4가됨 
             else if (i % j == 0) {
               count += 2;
             }
