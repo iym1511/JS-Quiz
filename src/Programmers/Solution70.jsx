@@ -1,3 +1,4 @@
+// 숫자 짝꿍
 const Solution70 = () => {
   
 
