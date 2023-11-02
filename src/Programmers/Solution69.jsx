@@ -15,7 +15,7 @@ function solution(n) {
     return answer;
 }
 
-console.log(solution(n))
+console.log(solution(n));
 // 아래 함수를 사용해도 가능
 const waterMelon = n => "수박".repeat(n).slice(0,n);
 
