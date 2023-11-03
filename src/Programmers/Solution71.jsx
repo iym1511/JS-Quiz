@@ -70,12 +70,16 @@ const Solution71 = () => {
 
     }
 
+    // 객체 속성 key를 가져와서 체크
     // 학생의 체육복이 1개 이상일때 학생 수 ++
     for (let key in students) {
+      console.log(key);
       if (students[key] > 0) {
         answer++;
       }
     }
+
+
     return answer;
 
   }
