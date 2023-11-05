@@ -61,6 +61,7 @@ const Solution74 = () => {
     ];
 
         /*
+    알파벳 만드는 법
     const alphabet = []
     for (let i = 97; i <= 122; i++) {
       alphabet.push(String.fromCharCode(i));
