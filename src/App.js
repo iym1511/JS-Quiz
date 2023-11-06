@@ -1,4 +1,5 @@
 import './App.css';
+import Solution75 from './Programmers/\bSolution75';
 import Solution66 from './Programmers/Solution66';
 import Solution67 from './Programmers/Solution67';
 import Solution68 from './Programmers/Solution68';
@@ -13,7 +14,7 @@ import Solution74 from './Programmers/Solution74';
   return (
     <div className="App">
       {/* <Quizs /> */}
-      <Solution74/>
+      <Solution75/>
     </div>
   );
 }
