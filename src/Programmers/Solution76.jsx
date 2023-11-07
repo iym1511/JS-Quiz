@@ -28,10 +28,10 @@ const Solution76 = () => {
   // 각각의 target마다의 최소 횟수 구하기
   // 접근할 수 없는 횟수를 시도한 것들은 -1로 필터링하고 리턴 
 
-  // const keymap = ["ABACD", "BCEFD"];
-  // const targets = ["ABCD", "AABB"];
-  const keymap = ["AA"];
-  const targets = ["B"];
+  const keymap = ["ABACD", "BCEFD"];
+  const targets = ["ABCD", "AABB"];
+  // const keymap = ["AA"];
+  // const targets = ["B"];
 
   function solution(keymap, targets) {
     const minKeypad = {}
@@ -56,7 +56,6 @@ const Solution76 = () => {
         target.split('').reduce((sum,val)=>{
         // 9. 기본0시작 > A:1 sum=1 > B:1 sum=2 > C:2 sum=4  
         // 총합 더하기 
-        console.log(minKeypad[val])
         return  sum+minKeypad[val]
     },0));
 
