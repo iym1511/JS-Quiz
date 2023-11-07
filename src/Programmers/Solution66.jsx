@@ -8,7 +8,7 @@ const Solution66 = () => {
     // 중복 제거 (배열형태)
     const arr = [...new Set(nums)]; // .size 와 같은 역할(size : 길이 수)
 
-    // 3 > 2 ? 2 : 3 
+    // 2 > 3 ? 3 : 2 
     return arr.length > max ? max : arr.length;
   }
 
