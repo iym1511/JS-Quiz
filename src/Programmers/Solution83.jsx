@@ -1,5 +1,8 @@
+import { useState } from "react";
+
 // [1차]비밀지도 2018 KAKAO BLIND RECRUITMENT
 const Solution83 = () => {
+
   const n = 5;
   const arr1 = [9, 20, 28, 18, 11];
   const arr2 = [30, 1, 21, 17, 28];
