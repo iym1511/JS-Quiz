@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 // [1차]비밀지도 2018 KAKAO BLIND RECRUITMENT
 const Solution83 = () => {
 
