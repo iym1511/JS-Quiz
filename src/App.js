@@ -7,7 +7,7 @@ import Solution81 from './Programmers/Solution81';
 import Solution82 from './Programmers/Solution82';
 import Solution83 from './Programmers/Solution83';
 import Test from './Programmers/Test';
-import IssuesList from './test/IssuesList';
+import IssuesList from './infiniteScroll/IssuesList';
 
   function App() {
   return (

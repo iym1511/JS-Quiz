@@ -3,22 +3,24 @@ import useInfiniteScroll from "./useInfiniteScroll";
 import useIssues from "./useIssues";
 
 const IssuesList = () => {
-  const { issues, moreData, getIssues} = useIssues();
-  const [isLoaded, setIsLoaded] = useState(false); // Load 중인가를 판별하는 boolean
+  const { issues, moreData, getIssues, isLoaded} = useIssues();
+  const [listLoaded, setListLoaded] = useState(false); // Load 중인가를 판별하는 boolean
 
   const target = useInfiniteScroll(async (entry, observer) => {
-    observer.unobserve(entry.target); // 관찰을 멈추고
-    setIsLoaded(true); // loading 메시지 출력
+    observer.unobserve(entry.target); // 관찰을 멈추고(왜 여기다 한번 더 주는지는 잘 모르겠음)
+
+    setListLoaded(true); // loading 메시지 출력
     // 1초후 로딩 메시지 헤제
     setTimeout(() => {
-      setIsLoaded(false);
+      setListLoaded(false);
     }, 1500);
-    // moreData가 true isLoaded가 false면 데이터 불러오기
+
+    // moreData가 true, isLoaded가 false면 데이터 불러오기
     if (moreData && !isLoaded) {
       getIssues();
     }
   });
-
+  
   return (
     <div>
       {issues.map((data, index) => (
@@ -35,7 +37,7 @@ const IssuesList = () => {
           </div>
         </div>
       ))}
-      {isLoaded ? (
+      {listLoaded ? (
         <div
           style={{
             border: "1px solid gray",
