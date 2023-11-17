@@ -1,3 +1,7 @@
+// 2021 KAKAO BLIND RECRUITMENT 신규 아이디 추천
+
+import { useState } from "react";
+
 const Solution84 = () => {
   // 💡 65점짜리 내 코드 방법은 엄청 비슷했으나 간결하지 못함 💡
 
@@ -88,7 +92,32 @@ const Solution84 = () => {
 
   console.log(solution(new_id))
 
-  return <div></div>;
+  const [account, setAccount] = useState({
+    id : '',
+    password : '',
+    name : ''
+  });
+
+  const onHandleChange = (e) =>{
+    setAccount((prev) => ({...prev, id : e.target.value}));
+  }
+
+  const enterBtn = (e) =>{
+    if(e.key == 'Enter'){
+      alert(account.id);
+    }else{
+      alert(account.id)
+    }
+  }
+
+  return <div>
+    {/* <form onSubmit={}> */}
+      <label>아이디</label>
+      <input type="text" onChange={onHandleChange} value={account.id} onKeyPress={enterBtn}/>
+      <span>{account.id}</span>
+      <button onClick={enterBtn}>아이디 확인</button>
+    {/* </form> */}
+  </div>;
 };
 
 export default Solution84;
