@@ -1,5 +1,24 @@
+import { useState } from "react";
+
 // 신고 결과 받기_ 2022 KAKAO BLIND RECRUITMENT
 const Solution85 = () => {
+  const [asd, setAsd] = useState([
+    {
+      id:1,
+      name:"qwe"
+    }
+  ])
+
+  const q = [{
+    id:2,
+    name:"xxx"
+  }]
+
+  const aa = () =>{
+    setAsd((prev)=>[...prev, ...q])
+  }
+
+
 
   // 하다말은 내 코드 💡
 
@@ -63,7 +82,7 @@ const Solution85 = () => {
     report.forEach((reportData)=>{
         const [reporter,reported] = reportData.split(' ')
         if(!reportIdsSet[reporter].includes(reported)){
-            reportIdsSet[reporter].push(reported)
+            reportIdsSet[reporter].push(reported);
             reportCountsSet[reported]++
         }
     })
@@ -96,7 +115,6 @@ const Solution85 = () => {
 
   return (  
     <div>
-
     </div>
   );
 }
