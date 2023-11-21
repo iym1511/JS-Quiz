@@ -5,13 +5,14 @@ import Solution86 from './Programmers/Solution86';
 import Solution87 from './Programmers/Solution87';
 import Solution88 from './Programmers/Solution88';
 import Solution89 from './Programmers/Solution89';
+import Solution90 from './Programmers/Solution90';
 import IssuesList from './infiniteScroll/IssuesList';
 
   function App() {
   return (
     <div className="App">
       {/* <Quizs /> */}
-      <Solution89/>
+      <Solution90/>
       {/* <IssuesList /> */}
     </div>
   );
