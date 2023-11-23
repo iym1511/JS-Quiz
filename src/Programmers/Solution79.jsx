@@ -75,7 +75,6 @@ const Solution79 = () => {
     survey.forEach((surveyType, idx) => {
       // 이런식으로 0번째,1번째 index값을 가져올 수 있다.
       const [front, back] = surveyType.split("");
-
       // 내방식과 여기까진 똑같음
       if (choices[idx] < 4) {
         mbti[front] += Math.abs(choices[idx] - 4); // abs : 절댓값반환(양수=양수,음수=양수)
