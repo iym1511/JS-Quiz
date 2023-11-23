@@ -91,7 +91,7 @@ const Solution90 = () => {
       let split = darts[i].match(/(^\d{1,})(S|D|T)(\*|#)?/),
       // options에 undefind는 아무런 조건이 없을때 그대로 유지하기위해 1을 곱해줌
         score = Math.pow(split[1], bonus[split[2]]) * options[split[3]]; // (1,1)*1,(2,2)*2,(3,3)*1
-        
+
       // * 일때 이전값에 2만큼 곱해준값으로 변경
       if (split[3] === "*" && darts[i - 1]) {
         darts[i - 1] *= options["*"];
