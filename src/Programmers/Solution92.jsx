@@ -1,3 +1,4 @@
+// 크레인 인형뽑기 게임 2019 카카오 개발자 겨울 인턴십
 const Solution92 = () => {
 
   const board = [
