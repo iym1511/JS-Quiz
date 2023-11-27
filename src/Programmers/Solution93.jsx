@@ -52,7 +52,7 @@ const Solution93 = () => {
 
   function solution(N, stages) {
     const obj = {};
-    // 1에서 N까지 객체를 만듦
+    // 1에서 N까지 스테이지 객체를 만듦
     for (let i = 1; i <= N; i++) {
       obj[i] = 0;
     }
@@ -60,11 +60,11 @@ const Solution93 = () => {
     // 스테이지에 머물고있는 인원 파악 count +1 씩
     // {1: 1, 2: 3, 3: 2, 4: 1, 5: 0}
     stages.forEach((a) => {
-      if (a !== N + 1) {
+      if (a !== N + 1) { // 5스테이지 까지니까 6스테이지 이면 안됨
         obj[a] += 1;
       }
     });
-    console.log(obj)
+
     // 계산
     let stay = 0;
     let stayed = stages.length;
@@ -105,7 +105,9 @@ const Solution93 = () => {
 
   console.log(solution(N, stages));
 
-  return <div></div>;
+  return <div>
+
+  </div>;
 };
 
 export default Solution93;
