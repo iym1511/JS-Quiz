@@ -64,8 +64,6 @@ const Solution94 = () => {
       date.setMonth(date.getMonth() + termsT[monthType]); // 여기까지 일치했던 코드
 
       // 6개월이 지난 날짜가 오늘보다 작으면 유효기간 만료로 arr에 index값 추가
-      console.log(date,today) 
-
       if (date <= today) {
         arr.push(Number(idx) + 1);
       }
