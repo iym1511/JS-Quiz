@@ -1,3 +1,4 @@
+// 이진 변환 반복하기
 const Solution98 = () => {
   const s = "110010101001";
 
@@ -13,7 +14,7 @@ const Solution98 = () => {
         convertCount++
         // 현재 길이와 0이 아닌 수 의길이를 빼면 0의 갯수만큼 더해짐 
         deleteZeroCount += (beforeSLength - nowSLength)
-
+        // s를 이진변환을해서 같은과정 반복
         s = nowSLength.toString(2)
     }
     const answer = [convertCount, deleteZeroCount]
