@@ -6,13 +6,14 @@ import Solution96 from './Programmers/Solution96';
 import Solution97 from './Programmers/Solution97';
 import Solution98 from './Programmers/Solution98';
 import Solution99 from './Programmers/Solution99';
+import Solution100 from './Programmers/Solution100';
 
 // const Test = loadable(() => import('./Programmers/Solution93'));
 
   function App() {
   return (
     <div className="App">
-      <Solution99/>
+      <Solution100/>
     </div>
   );
 }
