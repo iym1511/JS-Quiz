@@ -36,6 +36,7 @@ const Solution104 = () => {
     }
 
     return [x, i];
+
   }
 
   console.log(solution(brown, yellow));
