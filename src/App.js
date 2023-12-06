@@ -3,13 +3,15 @@ import './App.css';
 import Solution104 from './Programmers/Solution104';
 import Solution105 from './Programmers/Solution105';
 import Solution106 from './Programmers/Solution106';
+import Solution107 from './Programmers/Solution107';
+import Solution108 from './Programmers/Solution108';
 
 // const Test = loadable(() => import('./Programmers/Solution93'));
 
   function App() {
   return (
     <div className="App">
-      <Solution106/>
+      <Solution108/>
     </div>
   );
 }

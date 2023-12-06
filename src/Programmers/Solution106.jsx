@@ -1,3 +1,4 @@
+// 귤 고르기
 const Solution106 = () => {
 
   const k = 6;
