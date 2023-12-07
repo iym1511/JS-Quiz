@@ -1,8 +1,9 @@
 // 올바른 괄호
 
 const Solution97 = () => {
-  const s = ")())(";
+  // const s = ")())(";
   // ")()("
+  const s = "()(())";
 
   function solution(s) {
     const stack = []; // 1. )  2. )(  3. )  4. )) 5. ))(
