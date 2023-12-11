@@ -6,6 +6,9 @@ import UseClick from './hooks/UseClick';
 import Solution112 from './Programmers/Solution112';
 import UseFadeIn from './hooks/UseFadeIn';
 import Solution113 from './Programmers/Solution113';
+import UseScroll from './hooks/UseScroll';
+import UseFullscreen from './hooks/UseFullscreen';
+import UseNotification from './hooks/UseNotification';
 
 // const Test = loadable(() => import('./Programmers/Solution93'));
 
@@ -17,6 +20,10 @@ import Solution113 from './Programmers/Solution113';
       <UseTitle></UseTitle>
       <UseClick></UseClick>
       <UseFadeIn/>
+      <UseFullscreen/>
+      <UseNotification />
+      <UseScroll/>
+
     </div>
   );
 }

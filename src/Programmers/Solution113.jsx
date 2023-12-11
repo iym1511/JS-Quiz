@@ -1,3 +1,4 @@
+// 최댓값과 최솟값
 const Solution113 = () => {
   const s = "1 2 3 4";
 
