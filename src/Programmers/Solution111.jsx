@@ -1,3 +1,4 @@
+// n^2 배열 자르기
 const Solution111 = () => {
   // const n = 3;
   // const left = 2;
@@ -55,6 +56,7 @@ const Solution111 = () => {
   function solution(n, left, right) {
     const answer = [];
     for (let i = left; i <= right; i++) {
+      // divide : 몫, rest : 나머지
       const divide = Math.floor(i / n);
       const rest = i % n;
 
