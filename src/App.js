@@ -10,6 +10,8 @@ import UseScroll from './hooks/UseScroll';
 import UseFullscreen from './hooks/UseFullscreen';
 import UseNotification from './hooks/UseNotification';
 import Solution114 from './Programmers/Solution114';
+import UseAxiosTest from './hooks/UseAxiosTest';
+
 
 // const Test = loadable(() => import('./Programmers/Solution93'));
 
@@ -23,8 +25,8 @@ import Solution114 from './Programmers/Solution114';
       <UseFadeIn/>
       <UseFullscreen/>
       <UseNotification />
+      <UseAxiosTest />
       <UseScroll/>
-
     </div>
   );
 }

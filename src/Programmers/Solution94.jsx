@@ -10,7 +10,7 @@ const Solution94 = () => {
     "2022.02.20 C",
   ];
 
-  // 다른사람 풀이를 적용시켜봣더니 30점이 나온 내 코드
+  // 다른사람 풀이를 추가시켜봣더니 30점이 나온 내 코드
   // function solution(today, terms, privacies) {
   //   let answer = [];
   //   let obj = {};
