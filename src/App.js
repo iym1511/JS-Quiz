@@ -9,13 +9,14 @@ import Solution113 from './Programmers/Solution113';
 import UseScroll from './hooks/UseScroll';
 import UseFullscreen from './hooks/UseFullscreen';
 import UseNotification from './hooks/UseNotification';
+import Solution114 from './Programmers/Solution114';
 
 // const Test = loadable(() => import('./Programmers/Solution93'));
 
   function App() {
   return (
     <div className="App">
-      <Solution113/>
+      <Solution114/>
       <UseHooksTest></UseHooksTest>
       <UseTitle></UseTitle>
       <UseClick></UseClick>

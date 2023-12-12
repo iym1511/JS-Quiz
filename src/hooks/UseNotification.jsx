@@ -30,11 +30,11 @@ const UseNotification = () => {
     icon : "https://gongu.copyright.or.kr/gongu/wrt/cmmn/wrtFileImageView.do?wrtSn=9046601&filePath=L2Rpc2sxL25ld2RhdGEvMjAxNC8yMS9DTFM2L2FzYWRhbFBob3RvXzI0MTRfMjAxNDA0MTY=&thumbAt=Y&thumbSe=b_tbumb&wrtTy=10004"
   });
 
-  useEffect(()=>{
-    setTimeout(()=>{
-      triggerNotif();
-    },1500)
-  },[])
+  // useEffect(()=>{
+  //   setTimeout(()=>{
+  //     triggerNotif();
+  //   },1500)
+  // },[])
 
   return (  
     <div>
