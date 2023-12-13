@@ -1,3 +1,4 @@
+// 할인행사
 const Solution115 = () => {
   const want = ["banana", "apple", "rice", "pork", "pot"];
   const number = [3, 2, 2, 2, 1];
