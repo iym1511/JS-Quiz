@@ -8,13 +8,13 @@ const Solution116 = () => {
 
   function solution(progresses, speeds) {
     let answer = [];
-    // Math.ceil 소수점 있으면 올림
+    // Math.ceil 소수점 있으면 올림 [7, 3, 9]
     let days = progresses.map((progress, index) => Math.ceil((100 - progress) / speeds[index]));
     let maxDay = days[0];
 
     let tempCount = 0;
     for(let i = 0; i < days.length; i++) {
-      // 처음 수인 7보다 낮으면 카운트증가
+      // 처음 수인 7보다 작으면 카운트증가
       if(days[i] <= maxDay) {
         tempCount++;
       } else {
