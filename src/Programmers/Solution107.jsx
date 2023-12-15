@@ -46,33 +46,39 @@ const Solution107 = () => {
 
   console.log(solution(people, limit));
 
-  
+  // 텍스트 입력
   const [editText, setEditText] = useState('');
+  // 할일
   const [todo, setTodo] = useState([]);
 
-  const pushTodo = () => {
-    ids+=1;
-    setTodo((prev) => [...prev, account])
-  }
-
-  const deleteTodo = (id) => {
-    setTodo(todo.filter((a) => a.id !== id))
-  }
-
-
-  const handleEditChange = useCallback((e) => {
-    setEditText(e.target.value);
-  },[editText]);
-  
-  const upDateTodo = (id) => {
-    setTodo((todo) => todo.map((a) => a.id === id ?  { ...a, name: editText }: {...a}));
-    setEditText(''); // 수정 완료 후 입력값 초기화
-  };
   const [account, setAccount] = useState({
     id : ids,
     password : '',
     name : ''
   });
+
+  // 배열에 추가
+  const pushTodo = () => {
+    setTodo((prev) => [...prev, {...account, id : ids++}])
+  }
+
+  // 삭제
+  const deleteTodo = (id) => {
+    setTodo(todo.filter((a) => a.id !== id))
+  }
+
+  // 글작성
+  const handleEditChange = useCallback((e) => {
+    setEditText(e.target.value);
+  },[editText]);
+  
+  // 수정
+  const upDateTodo = (id) => {
+    // 해당 댓글 배열에 직접 접근해서 객체에 수정한다.
+    setTodo((todo) => todo.map((a) => a.id === id ?  { ...a, name: editText }: {...a}));
+    setEditText(''); // 수정 완료 후 입력값 초기화
+  };
+
 
 
   const handleChange = (e) => {

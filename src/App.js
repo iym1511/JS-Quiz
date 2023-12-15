@@ -9,6 +9,8 @@ import UseFullscreen from './hooks/UseFullscreen';
 import UseNotification from './hooks/UseNotification';
 import UseAxiosTest from './hooks/UseAxiosTest';
 import Solution115 from './Programmers/Solution115';
+import Solution107 from './Programmers/Solution107';
+import Solution116 from './Programmers/Solution116';
 
 
 // const Test = loadable(() => import('./Programmers/Solution93'));
@@ -16,7 +18,8 @@ import Solution115 from './Programmers/Solution115';
   function App() {
   return (
     <div className="App">
-      <Solution115/>
+      <Solution116/>
+      {/* <Solution107/> */}
       {/* <UseHooksTest></UseHooksTest> */}
       {/* <UseTitle></UseTitle> */}
       {/* <UseClick></UseClick> */}

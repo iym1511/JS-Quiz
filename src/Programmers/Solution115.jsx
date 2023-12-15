@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 // 할인행사
 const Solution115 = () => {
   const want = ["banana", "apple", "rice", "pork", "pot"];
@@ -97,7 +99,55 @@ const Solution115 = () => {
 
   console.log(solution(want, number, discount));
 
-  return <div></div>;
+  const [comment, setComment] = useState(''); 
+
+  const [user, setUser] = useState([
+    {
+      id : 0,
+      user : 'iym1511',
+      name : '문일윤',
+      age : 25,
+      comment : 'ㅎㅇ'
+    },
+    {
+      id : 1,
+      user : 'qwer',
+      name : '홍길동',
+      age : 23,
+      comment : 'ㅂㅇ'
+    },
+    {
+      id : 2,
+      user : 'moon',
+      name : '두루미',
+      age : 21,
+      comment : 'ㅁㄴㅇ'
+    }
+  ]); 
+
+  const onChange = (e) =>{
+    setComment(e.target.value);
+  }
+
+  const modify = (user) => {
+    setUser((prev) => prev.map((a) => a.user === user.user ? {...a, comment : comment }: {...a}))
+  }
+
+  return <div>
+    <div>
+      {user.map((a) => (
+        <div>
+          <input type="text" value={comment}  onChange={onChange}/>
+          <button onClick={()=>modify(a)}>수정</button>
+          <p>{a.user}</p>
+          <p>{a.name}</p>
+          <p>{a.comment}</p>
+          <br/>
+        </div>
+      ))}
+    </div>
+
+  </div>;
 };
 
 export default Solution115;
