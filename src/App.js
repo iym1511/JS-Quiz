@@ -12,6 +12,9 @@ import Solution115 from './Programmers/Solution115';
 import Solution107 from './Programmers/Solution107';
 import Solution116 from './Programmers/Solution116';
 import Solution117 from './Programmers/Solution117';
+import Server from './GraphQL/Server';
+import Solution118 from './Programmers/Solution118';
+
 
 
 // const Test = loadable(() => import('./Programmers/Solution93'));
@@ -19,7 +22,8 @@ import Solution117 from './Programmers/Solution117';
   function App() {
   return (
     <div className="App">
-      <Solution117/>
+      <Solution118/>
+      {/* <Server/> */}
       {/* <Solution107/> */}
       {/* <UseHooksTest></UseHooksTest> */}
       {/* <UseTitle></UseTitle> */}
