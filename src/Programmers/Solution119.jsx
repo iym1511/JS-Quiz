@@ -21,7 +21,6 @@ const Solution119 = () => {
       addTarget(tried + 1, sum + numbers[tried], stack);
       // 1,-4 / 2, -5 / 3 -7 / 4, -8
       addTarget(tried + 1, sum - numbers[tried], stack);
-
     };
     // 1,4 / 2,
     addTarget(0, 0, stack);
@@ -30,6 +29,7 @@ const Solution119 = () => {
   }
 
   console.log(solution(numbers, target));
+
 
   return <div></div>;
 };
