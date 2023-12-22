@@ -1,3 +1,5 @@
+// 피로도(dfs)
+
 const Solution201 = () => {
   const k = 80;
   const d = [
