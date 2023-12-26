@@ -22,6 +22,7 @@ import Sol1 from './JSalgorithm/문자열 탐색/Sol1';
 import Sol2 from './JSalgorithm/문자열 탐색/Sol2';
 import Sol3 from './JSalgorithm/문자열 탐색/Sol3';
 import Sol4 from './JSalgorithm/문자열 탐색/Sol4';
+import Sol5 from './JSalgorithm/문자열 탐색/Sol5';
 
 
 
@@ -30,7 +31,7 @@ import Sol4 from './JSalgorithm/문자열 탐색/Sol4';
   function App() {
   return (
     <div className="App">
-      <Sol4 />
+      <Sol5 />
       {/* <Solution118/> */}
       {/* <Server/> */}
       {/* <Solution107/> */}

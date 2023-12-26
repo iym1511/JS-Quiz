@@ -10,10 +10,10 @@ const Sol4 = () => {
 
     // 첫번째로 정방향일때 e와의 거리를 계산
     for (let x of a) {
-      if(x === b){
-        count=0;
-        answer.push(count)
-      }else{
+      if (x === b) {
+        count = 0;
+        answer.push(count);
+      } else {
         count++;
         answer.push(count);
       }
@@ -23,17 +23,14 @@ const Sol4 = () => {
     count = 0;
 
     // 두번째로 역방향일때 e와의 거리를 계산
-    for(let i=a.length-1; i >= 0; i--){
-      if(a[i] === b){
+    for (let i = a.length - 1; i >= 0; i--) {
+      if (a[i] === b) {
         count = 0;
-      }else{
+      } else {
         count++;
         answer[i] = Math.min(answer[i], count);
       }
-      
-
     }
-
 
     return answer;
   };
