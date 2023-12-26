@@ -18,7 +18,9 @@ import Solution119 from './Programmers/Solution119';
 import Solution200 from './Programmers/Solution200';
 import Solution201 from './Programmers/Solution201';
 import Solution202 from './Programmers/Solution202';
-import Sol1 from './JSalgorithm/Sol1';
+import Sol1 from './JSalgorithm/문자열 탐색/Sol1';
+import Sol2 from './JSalgorithm/문자열 탐색/Sol2';
+import Sol3 from './JSalgorithm/문자열 탐색/Sol3';
 
 
 
@@ -27,7 +29,7 @@ import Sol1 from './JSalgorithm/Sol1';
   function App() {
   return (
     <div className="App">
-      <Sol1 />
+      <Sol3 />
       {/* <Solution118/> */}
       {/* <Server/> */}
       {/* <Solution107/> */}

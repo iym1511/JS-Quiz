@@ -30,7 +30,6 @@ const Solution118 = () => {
       }  
       } else { // 3이 나왔을경우 3보다 큰수는없어서 실행 3, [2,2,1]
         answer++;
-        console.log(location,answer)
         if (location == 0) return answer; // location이 0이라서 1 return
         else location--;
       }

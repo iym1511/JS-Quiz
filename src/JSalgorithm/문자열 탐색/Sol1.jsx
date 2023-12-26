@@ -17,7 +17,7 @@ const Sol1 = () => {
     }
 
     // 강의내용 사용법2 
-    // if(s.split('').reverse().join !== s){
+    // if(s.split('').reverse().join('') !== s){
     //   return "NO"
     // }
 
