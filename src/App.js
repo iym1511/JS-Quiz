@@ -18,6 +18,7 @@ import Solution119 from './Programmers/Solution119';
 import Solution200 from './Programmers/Solution200';
 import Solution201 from './Programmers/Solution201';
 import Solution202 from './Programmers/Solution202';
+import Sol1 from './JSalgorithm/Sol1';
 
 
 
@@ -26,10 +27,11 @@ import Solution202 from './Programmers/Solution202';
   function App() {
   return (
     <div className="App">
-      <Solution202/>
+      <Sol1 />
+      {/* <Solution118/> */}
       {/* <Server/> */}
       {/* <Solution107/> */}
-      <UseHooksTest></UseHooksTest>
+      {/* <UseHooksTest></UseHooksTest> */}
       {/* <UseTitle></UseTitle> */}
       {/* <UseClick></UseClick> */}
       {/* <UseFadeIn/> */}

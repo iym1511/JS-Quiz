@@ -5,20 +5,23 @@ const useScroll = () => {
     x: 0,
     y: 0
   });
+  
   const onScroll = (e) => {
     setState({y : window.scrollY, x : window.scrollX})
     console.log("y",window.scrollY, "x", window.scrollX);
   }
+
   useEffect(()=>{
     window.addEventListener("scroll",onScroll);
     return () => window.removeEventListener("scroll", onScroll)
   },[])
-  return state
+
+  return [state.x, state.y]
 }
 
 const UseScroll = () => {
 
-  const {y} = useScroll();
+  const [x, y] = useScroll();
 
   return (  
     <div style={{height:"1000vh"}}>
