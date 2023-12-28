@@ -11,16 +11,18 @@
 // ▣ 출력예제 1 K2HS7E
 
 const Sol5 = () => {
+
   const str = "KKHSSSSSSSE";
 
   function solution(s) {
     let answer = "";
     let cnt = 1;
 
+    // 코드가 다음문자열을 확인하는방식이라 마지막E와 비교할 빈칸 생성
     s = s + " ";
     
     for (let i = 0; i < s.length - 1; i++) {
-      if (s[i] === s[i + 1]) cnt++;
+      if (s[i] === s[i + 1]) cnt++; // 현재문자열과 다음문자열이 같으면 cnt++1
       else { 
         answer += s[i];
         if (cnt > 1) { // 1이상일때 문자열개수 추가
