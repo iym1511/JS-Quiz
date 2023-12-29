@@ -33,8 +33,8 @@ const Sol1 = () => {
       let sum = x.toString().split("").reduce((a, b) => a + Number(b), 0);
       // max값보다 다 더한값이 더 크면!
       if (sum > max) {
-        max = sum;
-        answer = x;
+        max = sum; // 값저장
+        answer = x; // 값 저장
       } else if (sum === max) { // 다 더한값과 저장되어있던 값이 같으면!
         if (x > answer) answer = x;
       }
