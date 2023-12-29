@@ -26,8 +26,8 @@ const Sol3 = () => {
 
   const solution = (arr) => {
     let answer = 0;
-    let m = arr.length;
-    let n = arr[0].length;
+    let m = arr.length; // 총 시험치른 횟수
+    let n = arr[0].length; // 학생 인원
 
     for(let i = 1; i<=n; i++){
       for(let j = 1; j<=n; j++){
