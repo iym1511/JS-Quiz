@@ -21,7 +21,7 @@ import Solution202 from './Programmers/Solution202';
 import Sol1 from './JSalgorithm/완전탐색(블루투포스)/Sol1';
 import Sol2 from './JSalgorithm/완전탐색(블루투포스)/Sol2';
 import Sol3 from './JSalgorithm/완전탐색(블루투포스)/Sol3';
-
+import Sol5 from './JSalgorithm/완전탐색(블루투포스)/Sol5';
 
 
 
@@ -30,7 +30,7 @@ import Sol3 from './JSalgorithm/완전탐색(블루투포스)/Sol3';
   function App() {
   return (
     <div className="App">
-      <Sol3/>
+      <Sol5/>
       {/* <Solution118/> */}
       {/* <Server/> */}
       {/* <Solution107/> */}
