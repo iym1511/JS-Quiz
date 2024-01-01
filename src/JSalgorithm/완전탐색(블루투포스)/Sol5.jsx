@@ -11,6 +11,8 @@ const Sol5 = () => {
     // let sumAry = [];
     // let sum = 0;
 
+    // 중복을 모두 거르기 위함 
+    // add 메서드 사용해도 중복은 추가안됨
     let tmp = new Set(arr);
 
     // len-2 를 굳이 안해도 for문에 조건에 맞지않아서 작동 안함
