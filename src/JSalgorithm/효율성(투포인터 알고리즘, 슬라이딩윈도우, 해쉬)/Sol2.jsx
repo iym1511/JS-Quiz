@@ -7,8 +7,8 @@ const Sol2 = () => {
     let answer =[];
     let p1=0;
     let p2=0;
-    arr1.sort();
-    arr2.sort();
+    arr1.sort((a,b) => a-b);
+    arr2.sort((a,b) => a-b);
 
     // 내가 작성한 방법
     // while (p1 < arr1.length && p2 < arr2.length) {
