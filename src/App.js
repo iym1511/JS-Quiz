@@ -18,11 +18,9 @@ import Solution119 from './Programmers/Solution119';
 import Solution200 from './Programmers/Solution200';
 import Solution201 from './Programmers/Solution201';
 import Solution202 from './Programmers/Solution202';
-import Sol1 from './JSalgorithm/완전탐색(블루투포스)/Sol1';
-import Sol2 from './JSalgorithm/완전탐색(블루투포스)/Sol2';
-import Sol3 from './JSalgorithm/완전탐색(블루투포스)/Sol3';
-import Sol5 from './JSalgorithm/완전탐색(블루투포스)/Sol5';
-import Sol4 from './JSalgorithm/완전탐색(블루투포스)/Sol4';
+import Sol1 from './JSalgorithm/효율성(투포인터 알고리즘, 슬라이딩윈도우, 해쉬)/Sol1';
+import Sol2 from './JSalgorithm/효율성(투포인터 알고리즘, 슬라이딩윈도우, 해쉬)/Sol2';
+
 
 
 
@@ -31,7 +29,7 @@ import Sol4 from './JSalgorithm/완전탐색(블루투포스)/Sol4';
   function App() {
   return (
     <div className="App">
-      <Sol4/>
+      <Sol2/>
       {/* <Solution118/> */}
       {/* <Server/> */}
       {/* <Solution107/> */}
