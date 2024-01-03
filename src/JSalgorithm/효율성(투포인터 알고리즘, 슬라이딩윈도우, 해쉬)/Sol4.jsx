@@ -10,11 +10,13 @@ const Sol4 = () => {
 
     for(let rt=0; rt<arr.length; rt++){
       sum += arr[rt];
-      // sum이 m보다 크면 arr의 맨앞자리수를 뺀다
+      // m이하가 될때까지 sum에서 앞자리수 들을 - 해나간다.
+      // sum에서 앞자리수를 빼고 나서야 m보다 이하가 되어서 answer에 + 할 수 있다
       while(sum>m){
         sum -= arr[lt++]
       }
-      answer += (rt-lt+1); // lt가 증가된 값으로 뺌
+      // sum이 m이하가 되어야만 answer에 플러스된다.
+      answer += (rt-lt+1);
     }
 
     // 1. sum = 1 0-0+1=(1)
