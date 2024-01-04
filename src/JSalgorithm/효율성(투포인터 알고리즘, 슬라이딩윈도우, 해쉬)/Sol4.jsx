@@ -13,7 +13,7 @@ const Sol4 = () => {
       // m이하가 될때까지 sum에서 앞자리수 들을 - 해나간다.
       // sum에서 앞자리수를 빼고 나서야 m보다 이하가 되어서 answer에 + 할 수 있다
       while(sum>m){
-        sum -= arr[lt++]
+        sum -= arr[lt++];
       }
       // sum이 m이하가 되어야만 answer에 플러스된다.
       answer += (rt-lt+1);
