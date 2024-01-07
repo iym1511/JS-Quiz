@@ -25,6 +25,7 @@ import Sol4 from './JSalgorithm/효율성(투포인터 알고리즘, 슬라이�
 import Sol5 from './JSalgorithm/효율성(투포인터 알고리즘, 슬라이딩윈도우, 해쉬)/Sol5';
 import Sol6 from './JSalgorithm/효율성(투포인터 알고리즘, 슬라이딩윈도우, 해쉬)/Sol6';
 import Sol7 from './JSalgorithm/효율성(투포인터 알고리즘, 슬라이딩윈도우, 해쉬)/Sol7';
+import Sol8 from './JSalgorithm/효율성(투포인터 알고리즘, 슬라이딩윈도우, 해쉬)/Sol8';
 
 
 
@@ -34,7 +35,7 @@ import Sol7 from './JSalgorithm/효율성(투포인터 알고리즘, 슬라이�
   function App() {
   return (
     <div className="App">
-      <Sol7/>
+      <Sol8/>
       {/* <Solution118/> */}
       {/* <Server/> */}
       {/* <Solution107/> */}
