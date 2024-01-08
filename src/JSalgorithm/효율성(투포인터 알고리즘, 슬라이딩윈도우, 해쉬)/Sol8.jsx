@@ -45,7 +45,7 @@ const Sol8 = () => {
       // 마이너스 1 을 해서 0이되면 3칸 이내에 없는것이므로 삭제
       if(sH.get(s[lt]) === 0) sH.delete(s[lt]);
       lt++; // 증가시켜서 칸 앞으로 당김
-      console.log(sH)
+
     }
 
     return answer;
