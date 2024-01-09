@@ -2,7 +2,7 @@
 const Sol2 = () => {
 
   const a = "(A(BC)D)EF(G(H)(IJ)K)LM(N)";
-
+  
   const solution = (a) => {
     let answer;
     let stack = []

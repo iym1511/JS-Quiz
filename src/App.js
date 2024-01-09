@@ -20,6 +20,7 @@ import Solution201 from './Programmers/Solution201';
 import Solution202 from './Programmers/Solution202';
 import Sol1 from './JSalgorithm/\b스택,큐/Sol1';
 import Sol2 from './JSalgorithm/\b스택,큐/Sol2';
+import Sol3 from './JSalgorithm/\b스택,큐/Sol3';
 
 
 
@@ -29,7 +30,7 @@ import Sol2 from './JSalgorithm/\b스택,큐/Sol2';
   function App() {
   return (
     <div className="App">
-      <Sol2/>
+      <Sol3/>
       {/* <Solution118/> */}
       {/* <Server/> */}
       {/* <Solution107/> */}
