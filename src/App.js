@@ -22,6 +22,7 @@ import Sol1 from './JSalgorithm/\b스택,큐/Sol1';
 import Sol2 from './JSalgorithm/\b스택,큐/Sol2';
 import Sol3 from './JSalgorithm/\b스택,큐/Sol3';
 import Sol4 from './JSalgorithm/\b스택,큐/Sol4';
+import Sol5 from './JSalgorithm/\b스택,큐/Sol5';
 
 
 
@@ -31,7 +32,7 @@ import Sol4 from './JSalgorithm/\b스택,큐/Sol4';
   function App() {
   return (
     <div className="App">
-      <Sol4/>
+      <Sol5/>
       {/* <Solution118/> */}
       {/* <Server/> */}
       {/* <Solution107/> */}
