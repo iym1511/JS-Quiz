@@ -18,13 +18,9 @@ import Solution119 from './Programmers/Solution119';
 import Solution200 from './Programmers/Solution200';
 import Solution201 from './Programmers/Solution201';
 import Solution202 from './Programmers/Solution202';
-import Sol1 from './JSalgorithm/\b스택,큐/Sol1';
-import Sol2 from './JSalgorithm/\b스택,큐/Sol2';
-import Sol3 from './JSalgorithm/\b스택,큐/Sol3';
-import Sol4 from './JSalgorithm/\b스택,큐/Sol4';
-import Sol5 from './JSalgorithm/\b스택,큐/Sol5';
-import Sol6 from './JSalgorithm/\b스택,큐/Sol6';
-import Sol7 from './JSalgorithm/\b스택,큐/Sol7';
+import Sol1 from './JSalgorithm/정렬과 그리디, 결정알고리즘(이분검색)/Sol1';
+
+
 
 
 
@@ -34,7 +30,7 @@ import Sol7 from './JSalgorithm/\b스택,큐/Sol7';
   function App() {
   return (
     <div className="App">
-      <Sol7/>
+      <Sol1/>
       {/* <Solution118/> */}
       {/* <Server/> */}
       {/* <Solution107/> */}
