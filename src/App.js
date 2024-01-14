@@ -22,6 +22,8 @@ import Sol1 from './JSalgorithm/정렬과 그리디, 결정알고리즘(이분�
 import Sol2 from './JSalgorithm/정렬과 그리디, 결정알고리즘(이분검색)/Sol2';
 import Sol3 from './JSalgorithm/정렬과 그리디, 결정알고리즘(이분검색)/Sol3';
 import Sol4 from './JSalgorithm/정렬과 그리디, 결정알고리즘(이분검색)/Sol4';
+import Sol5 from './JSalgorithm/정렬과 그리디, 결정알고리즘(이분검색)/Sol5';
+
 
 
 
@@ -34,7 +36,7 @@ import Sol4 from './JSalgorithm/정렬과 그리디, 결정알고리즘(이분�
   function App() {
   return (
     <div className="App">
-      <Sol4/>
+      <Sol5/>
       {/* <Solution118/> */}
       {/* <Server/> */}
       {/* <Solution107/> */}
