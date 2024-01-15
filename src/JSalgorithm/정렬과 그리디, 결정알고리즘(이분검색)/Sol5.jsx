@@ -1,6 +1,8 @@
 // LRU(카카오 캐시 변형 : 삽입정렬응용)
 const Sol5 = () => {
   const arr = [1, 2, 3, 2, 6, 2, 3, 5, 7];
+//   캐시 메모리 상태 변화
+// 10000 21000 32100 23100 62310 26310 32610 53261 75326
 
   // 정석
   const solution = (size, arr) => {
@@ -13,7 +15,7 @@ const Sol5 = () => {
       // pos가 없다면
       if (pos === -1) {
         for (let i = size - 1; i >= 1; i--) {
-          answer[i] = answer[i - 1];
+          answer[i] = answer[i - 1]; // 앞에있는 정수 뒤로 당김
         }
       } else {
         // pos의 정수에 따라서 pos위치부터 -1씩내려가면서 위치변경
@@ -43,7 +45,7 @@ const Sol5 = () => {
         answer.unshift(x);
         if (answer.length > size) answer.pop();
       } else {
-        answer.splice(pos, 1);
+        answer.splice(pos, 1); // pos자리 index값 배열에서 제거
         answer.unshift(x);
       }
     });
