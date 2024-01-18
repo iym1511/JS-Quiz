@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+// 뮤직비디오(결정 알고리즘)
 const Sol11 = () => {
 
   const [asd, setAsd] = useState([
@@ -41,18 +41,19 @@ const Sol11 = () => {
 
       // 배열이 끝나고 cnt의 수가 필요한 장 이다.
       for (let x of arr) {
-        // 28 > 27
+        // 28 > 27, sum + x > 17
         if (sum + x > mid) {
           cnt++; // cnt = 2;
           sum = x; // sum=7(7) 여기서 sum이 7이되니 다시 else로
-        } else sum += x; // 1(1),3(2),6(3),10(4),15(5),21(6), 15(8), 24(9)
+        } else sum += x; // 1(1),3(2),6(3),10(4),15(5),21(6),  15(8),24(9)
       }
-
+      // 1, 3,6,10,15, 14,23
       // 2 <= 3
       if (cnt <= m) {
-        answer = mid;  // answer = 27;
-        rt = mid - 1;  // rt = 26
+        answer = mid;  // answer = 27; , answer = 17
+        rt = mid - 1;  // rt = 26 , let = 16
       } else lt = mid + 1;
+      console.log(lt, rt)
 
     }
     return answer;
@@ -61,8 +62,8 @@ const Sol11 = () => {
   console.log(solution(3, arr));
 
   return (
-    <div onClick={solution}>
-      <button>gd</button>
+    <div>
+      <button onClick={solution}>gd</button>
     </div>
   );
 };
