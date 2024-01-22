@@ -1,5 +1,6 @@
 // 재귀함수를 이용한 이진수 출력
 const Sol2 = () => {
+
   const solution = (n) => {
     let answer = "";
     const DFS = (L) => {
