@@ -27,6 +27,9 @@ import Sol6 from './JSalgorithm/재귀함수와 완전탐색(DFS:깊이우선탐
 import Sol7 from './JSalgorithm/재귀함수와 완전탐색(DFS:깊이우선탐색)/Sol7';
 import Sol8 from './JSalgorithm/재귀함수와 완전탐색(DFS:깊이우선탐색)/Sol8';
 import Sol9 from './JSalgorithm/재귀함수와 완전탐색(DFS:깊이우선탐색)/Sol9';
+import Sol10 from './JSalgorithm/재귀함수와 완전탐색(DFS:깊이우선탐색)/Sol10';
+import Sol11 from './JSalgorithm/재귀함수와 완전탐색(DFS:깊이우선탐색)/Sol11';
+
 
 
 // const Test = loadable(() => import('./Programmers/Solution93'));
@@ -34,7 +37,7 @@ import Sol9 from './JSalgorithm/재귀함수와 완전탐색(DFS:깊이우선탐
   function App() {
   return (
     <div className="App">
-      <Sol9/>
+      <Sol11/>
       {/* <Solution107 /> */}
       {/* <Solution118/> */}
       {/* <Server/> */}
