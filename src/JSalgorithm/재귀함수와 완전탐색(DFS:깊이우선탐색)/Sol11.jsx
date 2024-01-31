@@ -1,3 +1,4 @@
+// 팩토리얼
 const Sol11 = () => {
   const n = 5;
 
