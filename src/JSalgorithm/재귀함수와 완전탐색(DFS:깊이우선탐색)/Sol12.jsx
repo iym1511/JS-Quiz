@@ -13,9 +13,9 @@ const Sol12 = () => {
       if(n === r || r === 0){
         return 1;
       }else {
-        // console.log(n-1,r-1,"or",n-1,r)
+        console.log(n-1,r-1,"or",n-1,r)
         // console.log(dy[n][r])
-        console.log(DFS(n-1,r-1),"or",DFS(n-1,r));
+        // console.log(DFS(n-1,r-1),"or",DFS(n-1,r));
         console.log(dy);
         return dy[n][r] = DFS(n-1, r-1) + DFS(n-1, r); // 1.DFS(4,2)+DFS(4,3) 2.DFS(3,1)+DFS(3,2) 3.DFS(2,0)+DFS(2,1)  4.DFS(1,0)+DFS(1,1)백트래킹 5.DFS(2,1)+DFS(2,2) 6.DFS(1,0)+DFS(1,1)백트래킹 7.DFS(3,2)+DFS(3,3)
       }
