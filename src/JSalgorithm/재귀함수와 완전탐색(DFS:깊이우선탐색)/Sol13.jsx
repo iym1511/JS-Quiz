@@ -1,3 +1,4 @@
+// 수열 추측하기
 const Sol13 = () => {
   const solution = (n, f) => {
     let answer, flag=0;

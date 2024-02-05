@@ -19,8 +19,9 @@ import Solution200 from './Programmers/Solution200';
 import Solution201 from './Programmers/Solution201';
 import Solution202 from './Programmers/Solution202';
 import Sol1 from './JSalgorithm/그래프와 탐색(DFS, BFS:너비우선탐색)/Sol1';
-import Sol12 from './JSalgorithm/재귀함수와 완전탐색(DFS:깊이우선탐색)/\bSol12';
+import Sol12 from './JSalgorithm/재귀함수와 완전탐색(DFS:깊이우선탐색)/Sol12';
 import Sol13 from './JSalgorithm/재귀함수와 완전탐색(DFS:깊이우선탐색)/Sol13';
+import Sol14 from './JSalgorithm/재귀함수와 완전탐색(DFS:깊이우선탐색)/Sol14';
 
 
 // const Test = loadable(() => import('./Programmers/Solution93'));
@@ -28,8 +29,7 @@ import Sol13 from './JSalgorithm/재귀함수와 완전탐색(DFS:깊이우선�
   function App() {
   return (
     <div className="App">
-      <Sol12/>
-      <Sol13/>
+      <Sol14/>
       {/* <Solution107 /> */}
       {/* <Solution118/> */}
       {/* <Server/> */}
