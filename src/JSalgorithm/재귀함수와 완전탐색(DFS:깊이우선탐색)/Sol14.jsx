@@ -8,7 +8,7 @@ const Sol14 = () => {
         answer.push(tmp.slice());
       }else{
         for(let i=S; i<=n; i++){
-          console.log(L,i)
+          console.log(L,i);
           tmp[L]=i;
           DFS(L+1, i+1);
         }
@@ -19,6 +19,34 @@ const Sol14 = () => {
 
     return answer;
   }
+
+  const a = [
+    {
+      id:1,
+      name:'a'
+    },
+    {
+      id:2,
+      name:'b'
+    },
+    {
+      id:3,
+      name:'c'
+    },
+    {
+      id:4,
+      name:'d'
+    }
+  ]
+
+  const c = {
+    id:2,
+    name:'zxcs'
+  }
+
+  console.log(a.filter((n) => n.id !== c.id));
+  
+
 
   console.log(solution(4,2));
 
