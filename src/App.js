@@ -22,7 +22,8 @@ import Sol12 from './JSalgorithm/재귀함수와 완전탐색(DFS:깊이우선�
 import Sol13 from './JSalgorithm/재귀함수와 완전탐색(DFS:깊이우선탐색)/Sol13';
 import Sol14 from './JSalgorithm/재귀함수와 완전탐색(DFS:깊이우선탐색)/Sol14';
 import Solution203 from './Programmers/Solution203';
-import Sol1 from './JSalgorithm/Dynamic programming/Sol1'
+// import Sol1 from './JSalgorithm/Dynamic programming/Sol1'
+import Sol1 from './JSalgorithm/그래프와 탐색(DFS, BFS:너비우선탐색)/Sol1'
 
 // const Test = loadable(() => import('./Programmers/Solution93'));
 
