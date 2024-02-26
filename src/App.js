@@ -25,6 +25,7 @@ import Solution203 from './Programmers/Solution203';
 // import Sol1 from './JSalgorithm/Dynamic programming/Sol1'
 import Sol1 from './JSalgorithm/그래프와 탐색(DFS, BFS:너비우선탐색)/Sol1'
 import Sol2 from './JSalgorithm/그래프와 탐색(DFS, BFS:너비우선탐색)/Sol2';
+import Sol3 from './JSalgorithm/그래프와 탐색(DFS, BFS:너비우선탐색)/Sol3';
 
 // const Test = loadable(() => import('./Programmers/Solution93'));
 
@@ -32,7 +33,7 @@ import Sol2 from './JSalgorithm/그래프와 탐색(DFS, BFS:너비우선탐색)
   return (
     <div className="App">
       <Sol14/>
-      <Sol2/>
+      <Sol3/>
       {/* <Solution203/> */}
       {/* <Solution107 /> */}
       {/* <Solution118/> */}
