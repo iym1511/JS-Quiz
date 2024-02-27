@@ -64,6 +64,27 @@ const Sol3 = () => {
   };
   console.log(solution3(259, [81, 58, 42, 33, 61]));
 
+
+  const solution4 = (arr, m) => {
+    let answer = 0;
+    let len = arr.length;
+    const DFS = (L, sum, time) => {
+      // if(time > m) return;
+      if(L === len){
+        // if(time <= m){
+          answer = Math.max(answer, sum);
+          console.log(L,sum,time)
+        // }
+      }else {
+        DFS(L+1, sum+arr[L][0], time+arr[L][1])
+        DFS(L+1, sum, time)
+      }
+    }
+    DFS(0,0,0)
+    return answer
+  }
+  console.log("최대점수 구하기(DFS)",solution4([[10, 5], [25, 12], [15, 8], [6, 3], [7, 4]], 20))
+
   return <div></div>;
 };
 
