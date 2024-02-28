@@ -71,7 +71,6 @@ const Sol3 = () => {
       if (time > m) return;
       if (L === len) {
         answer = Math.max(answer, sum);
-        console.log(L, sum, time);
       } else {
         DFS(L + 1, sum + arr[L][0], time + arr[L][1]);
         DFS(L + 1, sum, time);
@@ -93,6 +92,28 @@ const Sol3 = () => {
       20
     )
   );
+
+  const solution5 = (n, l) => {
+    let answer = [];
+    let tmp = Array.from({ length: l }, () => 0);
+    const DFS = (L) => {
+      if (L === l) {
+        answer.push(tmp.slice());
+      } else {
+        // tmp[0]을 실행 후 tmp[1]들을 먼저 백트래킹 한 다음 tmp[0]이 다음숫자로 백트래킹 되어
+        // 이어나가면서 다시 DFS()가 작동을하여 tmp[1]을 백트래킹 한다.
+        // 이를 반복시 경우의 수가 모두 출력된다.
+        for (let i = 1; i <= n; i++) {
+          tmp[L] = i; 
+          DFS(L + 1);
+        }
+      }
+    };
+    DFS(0, 0);
+
+    return answer;
+  };
+  console.log(solution5(3, 2));
 
   return <div></div>;
 };
