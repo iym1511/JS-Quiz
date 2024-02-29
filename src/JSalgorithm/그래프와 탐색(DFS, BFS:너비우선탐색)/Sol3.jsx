@@ -115,6 +115,31 @@ const Sol3 = () => {
   };
   console.log(solution5(3, 2));
 
+
+  const solution6 = (arr, money) => {
+    // 기본값이 0 인데 최소값 구할때 사용
+    // (0으로 비교하면 처음값부터 무조건 0이 작기때문에 비교가안됨)
+    let answer = Number.MAX_SAFE_INTEGER;
+    let len = arr.length;
+
+    // L은 카운트 용도
+    const DFS = (L, sum) => { 
+      if(sum > money) return // 15원보다 크면 return
+      if(L > answer) return // 최소로 구해야하니까 더 크면 return
+      if(sum === money){
+        answer = Math.min(answer, L)
+      }else{
+        for(let i =0; i<len; i++){
+          DFS(L+1, sum+arr[i])
+        }
+      }
+    }
+    DFS(0,0);
+
+    return answer;
+  }
+  console.log(solution6([1,2,5], 15))
+
   return <div></div>;
 };
 
