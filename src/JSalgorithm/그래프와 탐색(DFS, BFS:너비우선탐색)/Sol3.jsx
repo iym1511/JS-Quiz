@@ -104,7 +104,7 @@ const Sol3 = () => {
         // 이어나가면서 다시 DFS()가 작동을하여 tmp[1]을 백트래킹 한다.
         // 이를 반복시 경우의 수가 모두 출력된다.
         for (let i = 1; i <= n; i++) {
-          tmp[L] = i; 
+          tmp[L] = i;
           DFS(L + 1);
         }
       }
@@ -115,7 +115,6 @@ const Sol3 = () => {
   };
   console.log(solution5(3, 2));
 
-
   const solution6 = (arr, money) => {
     // 기본값이 0 인데 최소값 구할때 사용
     // (0으로 비교하면 처음값부터 무조건 0이 작기때문에 비교가안됨)
@@ -123,22 +122,49 @@ const Sol3 = () => {
     let len = arr.length;
 
     // L은 카운트 용도
-    const DFS = (L, sum) => { 
-      if(sum > money) return // 15원보다 크면 return
-      if(L > answer) return // 최소로 구해야하니까 더 크면 return
-      if(sum === money){
-        answer = Math.min(answer, L)
-      }else{
-        for(let i =0; i<len; i++){
-          DFS(L+1, sum+arr[i])
+    const DFS = (L, sum) => {
+      if (sum > money) return; // 15원보다 크면 return
+      if (L > answer) return; // 최소로 구해야하니까 더 크면 return
+      if (sum === money) {
+        answer = Math.min(answer, L);
+      } else {
+        for (let i = 0; i < len; i++) {
+          DFS(L + 1, sum + arr[i]);
         }
       }
-    }
-    DFS(0,0);
+    };
+    DFS(0, 0);
 
     return answer;
-  }
-  console.log(solution6([1,2,5], 15))
+  };
+  console.log(solution6([1, 2, 5], 15));
+
+  const solution7 = (arr, m) => {
+    let answer = [];
+    let len = arr.length;
+    let tmp = Array.from({ length: m }, () => 0);
+    // 두번째 올 순열의 중복을 방지해줌 
+    let ch = Array.from({ length: len }, () => 0);
+
+    const DFS = (L) => {
+      if (L === m) {
+        answer.push(tmp.slice());
+      } else {
+        for (let i = 0; i < len; i++) {
+          if (ch[i] === 0) {
+            ch[i] = 1;
+            tmp[L] = arr[i];
+            DFS(L + 1);
+            ch[i] = 0;
+          }
+        }
+      }
+    };
+    DFS(0, 0);
+
+    return answer;
+  };
+  console.log(solution7([3, 6, 9], 2));
 
   return <div></div>;
 };
