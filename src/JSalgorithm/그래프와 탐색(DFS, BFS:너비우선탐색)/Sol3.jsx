@@ -143,7 +143,7 @@ const Sol3 = () => {
     let answer = [];
     let len = arr.length;
     let tmp = Array.from({ length: m }, () => 0);
-    // 두번째 올 순열의 중복을 방지해줌 
+    // 두번째 올 순열의 중복을 방지해줌
     let ch = Array.from({ length: len }, () => 0);
 
     const DFS = (L) => {
@@ -165,6 +165,18 @@ const Sol3 = () => {
     return answer;
   };
   console.log(solution7([3, 6, 9], 2));
+
+  const solution8 = (num) => {
+    let answer;
+    const DFS = (n) => {
+      if (n === 1) return 1;
+      else return answer = n * DFS(n - 1);
+    };
+    answer = DFS(num);
+
+    return answer;
+  };
+  console.log(solution8(5));
 
   return <div></div>;
 };
