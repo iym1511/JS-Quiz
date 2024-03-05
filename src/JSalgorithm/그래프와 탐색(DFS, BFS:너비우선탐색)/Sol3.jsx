@@ -178,6 +178,25 @@ const Sol3 = () => {
   };
   console.log(solution8(5));
 
+  const solution9 = (n, r) => {
+    let answer;
+    let dy = Array.from(Array(7), ()=>Array(7).fill(0));
+    console.log(dy)
+    const DFS = (n,r) => {
+      if(dy[n][r] > 0) return dy[n][r];
+      if(n === r || r === 0) return 1;
+      else {
+        // console.log((n-1,r-1));
+        console.log(DFS(n-1,r-1), DFS(n-1,r))
+        return dy[n][r] = DFS(n-1, r-1)+DFS(n-1,r);
+      } 
+    }
+    answer = DFS(n,r)
+
+    return answer;
+  }
+  console.log(solution9(5,3))
+
   return <div></div>;
 };
 
