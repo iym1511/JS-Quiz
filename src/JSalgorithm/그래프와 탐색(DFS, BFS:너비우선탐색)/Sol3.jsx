@@ -183,12 +183,26 @@ const Sol3 = () => {
     let dy = Array.from(Array(7), ()=>Array(7).fill(0));
     console.log(dy)
     const DFS = (n,r) => {
-      if(dy[n][r] > 0) return dy[n][r];
+      if(dy[n][r] > 0){
+        console.log("0이 1된거",n,r)
+        return dy[n][r];
+      } 
       if(n === r || r === 0) return 1;
       else {
-        // console.log((n-1,r-1));
-        console.log(DFS(n-1,r-1), DFS(n-1,r))
-        return dy[n][r] = DFS(n-1, r-1)+DFS(n-1,r);
+        console.log(DFS(n-1,r-1),DFS(n-1,r));
+        return dy[n][r] = DFS(n-1, r-1)+DFS(n-1,r); 
+        // dy[5][3] = 4,2(6가지 경우의 수) 
+        // dy[4][2] = 3,1(3가지 경우의 수)
+        // dy[3][1] = 2,0(return 1)
+        // 백트래킹) dy[3][1] = 2,0(return 1) + 2,1(2가지 경우의 수)  = 3
+        // 백트래킹) dy[2][1] = 1,0(return 1) 
+        // 백트래킹) dy[2][1] = 1.0(return 1) + 1,1(1가지 경우의 수) = 2
+        // 백트래킹) dy[4][2] = 3,1(3가지 경우의 수) + 3,2(3가지 경우의 수) = 6
+        // dy[3][2] = 2,1(2가지 경우의 수) + 2,2(1가지 경우의 수) = 3
+        // 나머지 해봤던거라 if문에서 걸림
+        // 백트래킹) dy[5][3] = 4,2(6가지 경우의 수) + 4,3(4가지 경우의 수) = 10
+        // dy[4][3] = 3,2(3가지 경우의 수) + 3,3(return 1) = 4
+        
       } 
     }
     answer = DFS(n,r)
