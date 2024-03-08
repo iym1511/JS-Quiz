@@ -211,6 +211,51 @@ const Sol3 = () => {
   }
   console.log(solution9(5,3))
 
+  const solution10 = (n, f) => {
+    let answer = [];
+    // 
+    let dy = Array.from(Array(11), () => Array(11).fill(0))
+    // 순열 돌리기 위한 체크배열
+    let ch = Array.from({length : n+1}, () => 0);
+    // 순열 저장
+    let p = Array.from({length : n}, () => 0);
+    // 조합수 저장 1,3,3,1
+    let b = Array.from({length : n}, () => 0);
+    let flag = 0;
+
+    const combi = (n, r) => {
+      if(dy[n][r] > 0)  return dy[n][r];
+      if(n === r || r === 0) return 1;
+      else return dy[n][r] = combi(n-1, r-1) + combi(n-1, r);
+
+    }
+    const DFS = (L, sum) => {
+      if(flag) return
+      if(L === n && sum === f){
+        answer.push(p.slice());
+        flag = 1
+      }else{
+        for(let i = 1; i<=n; i++){
+          if(ch[i] === 0){
+            ch[i] = 1
+            p[L] = i
+            console.log(L,i)
+            // console.log(i); // (1)1 1 / (2)2 3 / (3)3 3 / (4)4 1 : 1+6+9
+            DFS(L+1, sum+(b[L]*p[L]));
+            console.log(p,L,sum,i)
+            ch[i] = 0
+          }
+        }
+      }
+    }
+    for(let i = 0; i < n; i++){
+      b[i] = combi(n-1, i);
+    }
+    DFS(0,0)
+    return answer;
+  }
+  console.log(solution10(4,16))
+
   return <div></div>;
 };
 
