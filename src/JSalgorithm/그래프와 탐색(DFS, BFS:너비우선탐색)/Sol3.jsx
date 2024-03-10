@@ -256,6 +256,26 @@ const Sol3 = () => {
   }
   console.log(solution10(4,16))
 
+  const solution11 = (n,m) => {
+    let answer = [];
+    let tmp = Array.from({length:m}, () => 0);
+
+    const DFS = (L,S) => {
+      if(L===m){
+        answer.push(tmp.slice());
+      }else {
+        for(let i = S; i<=n; i++) {
+            tmp[L] = i
+            DFS(L+1, i+1); // for문을 이어가기위해 S가 아닌 i에 1을 더함
+        }
+      }
+    }
+    DFS(0,1);
+
+    return answer;
+  }
+  console.log(solution11(4,2));
+
   return <div></div>;
 };
 
