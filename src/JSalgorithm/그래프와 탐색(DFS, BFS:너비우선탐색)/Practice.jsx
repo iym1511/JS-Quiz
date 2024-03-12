@@ -1,4 +1,4 @@
-const Sol3 = () => {
+const Practice = () => {
   const solution = (n) => {
     let answer = [];
     let ch = Array.from({ length: n + 1 }, () => 0);
@@ -301,4 +301,4 @@ const Sol3 = () => {
   return <div></div>;
 };
 
-export default Sol3;
+export default Practice;

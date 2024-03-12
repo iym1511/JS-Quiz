@@ -8,35 +8,21 @@ import UseScroll from './hooks/UseScroll';
 import UseFullscreen from './hooks/UseFullscreen';
 import UseNotification from './hooks/UseNotification';
 import UseAxiosTest from './hooks/UseAxiosTest';
-import Solution115 from './Programmers/Solution115';
-import Solution107 from './Programmers/Solution107';
-import Solution116 from './Programmers/Solution116';
-import Solution117 from './Programmers/Solution117';
-// import Server from './GraphQL/Server';
-import Solution118 from './Programmers/Solution118';
-import Solution119 from './Programmers/Solution119';
-import Solution200 from './Programmers/Solution200';
-import Solution201 from './Programmers/Solution201';
-import Solution202 from './Programmers/Solution202';
 import Sol12 from './JSalgorithm/재귀함수와 완전탐색(DFS:깊이우선탐색)/Sol12';
 import Sol13 from './JSalgorithm/재귀함수와 완전탐색(DFS:깊이우선탐색)/Sol13';
 import Sol14 from './JSalgorithm/재귀함수와 완전탐색(DFS:깊이우선탐색)/Sol14';
 import Solution203 from './Programmers/Solution203';
 // import Sol1 from './JSalgorithm/Dynamic programming/Sol1'
 import Sol1 from './JSalgorithm/그래프와 탐색(DFS, BFS:너비우선탐색)/Sol1'
-import Sol2 from './JSalgorithm/그래프와 탐색(DFS, BFS:너비우선탐색)/Sol2';
-import Sol3 from './JSalgorithm/그래프와 탐색(DFS, BFS:너비우선탐색)/Sol3';
+import Practice from './JSalgorithm/그래프와 탐색(DFS, BFS:너비우선탐색)/Practice';
 
 // const Test = loadable(() => import('./Programmers/Solution93'));
 
   function App() {
   return (
     <div className="App">
-      <Sol14/>
-      <Sol3/>
-      {/* <Solution203/> */}
-      {/* <Solution107 /> */}
-      {/* <Solution118/> */}
+      <Sol1 />
+      {/* <Practice/> */}
       {/* <Server/> */}
       {/* <Solution107/> */}
       {/* <UseHooksTest></UseHooksTest> */}
